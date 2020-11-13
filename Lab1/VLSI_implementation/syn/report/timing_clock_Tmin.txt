@@ -1,0 +1,129 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Filter
+Version: O-2018.06-SP4
+Date   : Fri Nov  6 10:43:20 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_a1/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg_DOUT/Q_reg[10]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_a1/Q_reg[3]/CK (DFFR_X1)                            0.00       0.00 r
+  reg_a1/Q_reg[3]/Q (DFFR_X1)                             0.11       0.11 r
+  reg_a1/Q[3] (reg_N11_4)                                 0.00       0.11 r
+  mul_a1/A[3] (multiplier_n_N12_0)                        0.00       0.11 r
+  mul_a1/mult_18/a[3] (multiplier_n_N12_0_DW_mult_tc_0)
+                                                          0.00       0.11 r
+  mul_a1/mult_18/U475/ZN (XNOR2_X1)                       0.07       0.18 r
+  mul_a1/mult_18/U386/Z (BUF_X1)                          0.04       0.23 r
+  mul_a1/mult_18/U378/ZN (NAND2_X1)                       0.03       0.26 f
+  mul_a1/mult_18/U550/ZN (OAI22_X1)                       0.05       0.31 r
+  mul_a1/mult_18/U79/S (HA_X1)                            0.08       0.39 r
+  mul_a1/mult_18/U78/S (FA_X1)                            0.12       0.51 f
+  mul_a1/mult_18/U449/ZN (NAND2_X1)                       0.04       0.55 r
+  mul_a1/mult_18/U420/ZN (NAND3_X1)                       0.04       0.58 f
+  mul_a1/mult_18/U444/ZN (NAND2_X1)                       0.03       0.61 r
+  mul_a1/mult_18/U319/ZN (AND3_X1)                        0.06       0.67 r
+  mul_a1/mult_18/U341/ZN (OAI222_X1)                      0.05       0.72 f
+  mul_a1/mult_18/U440/ZN (NAND2_X1)                       0.04       0.76 r
+  mul_a1/mult_18/U421/ZN (NAND3_X1)                       0.04       0.79 f
+  mul_a1/mult_18/U451/ZN (NAND2_X1)                       0.03       0.82 r
+  mul_a1/mult_18/U383/ZN (NAND3_X1)                       0.04       0.85 f
+  mul_a1/mult_18/U16/CO (FA_X1)                           0.10       0.95 f
+  mul_a1/mult_18/U410/ZN (NAND2_X1)                       0.04       1.00 r
+  mul_a1/mult_18/U340/ZN (NAND3_X1)                       0.04       1.04 f
+  mul_a1/mult_18/U482/Z (XOR2_X1)                         0.05       1.09 r
+  mul_a1/mult_18/product[12] (multiplier_n_N12_0_DW_mult_tc_0)
+                                                          0.00       1.09 r
+  mul_a1/P[12] (multiplier_n_N12_0)                       0.00       1.09 r
+  sub_fb/b[2] (subtractor_N12)                            0.00       1.09 r
+  sub_fb/sub_18/B[2] (subtractor_N12_DW01_sub_0)          0.00       1.09 r
+  sub_fb/sub_18/U47/ZN (INV_X1)                           0.03       1.12 f
+  sub_fb/sub_18/U34/ZN (NAND2_X1)                         0.03       1.15 r
+  sub_fb/sub_18/U35/ZN (NAND3_X1)                         0.04       1.19 f
+  sub_fb/sub_18/U2_3/CO (FA_X1)                           0.09       1.28 f
+  sub_fb/sub_18/U2_4/CO (FA_X1)                           0.10       1.38 f
+  sub_fb/sub_18/U38/ZN (NAND2_X1)                         0.03       1.41 r
+  sub_fb/sub_18/U40/ZN (NAND3_X1)                         0.04       1.45 f
+  sub_fb/sub_18/U2_6/CO (FA_X1)                           0.09       1.54 f
+  sub_fb/sub_18/U2_7/CO (FA_X1)                           0.10       1.63 f
+  sub_fb/sub_18/U21/ZN (NAND2_X1)                         0.04       1.68 r
+  sub_fb/sub_18/U19/ZN (NAND3_X1)                         0.04       1.71 f
+  sub_fb/sub_18/U26/ZN (NAND2_X1)                         0.03       1.74 r
+  sub_fb/sub_18/U29/ZN (NAND3_X1)                         0.04       1.78 f
+  sub_fb/sub_18/U2_10/S (FA_X1)                           0.15       1.93 r
+  sub_fb/sub_18/DIFF[10] (subtractor_N12_DW01_sub_0)      0.00       1.93 r
+  sub_fb/subtraction[10] (subtractor_N12)                 0.00       1.93 r
+  mul_b0/B[10] (multiplier_n_N12_1)                       0.00       1.93 r
+  mul_b0/mult_18/b[10] (multiplier_n_N12_1_DW_mult_tc_0)
+                                                          0.00       1.93 r
+  mul_b0/mult_18/U340/ZN (XNOR2_X1)                       0.07       2.00 r
+  mul_b0/mult_18/U419/ZN (OAI22_X1)                       0.04       2.04 f
+  mul_b0/mult_18/U406/ZN (XNOR2_X1)                       0.07       2.10 f
+  mul_b0/mult_18/U510/ZN (XNOR2_X1)                       0.06       2.16 f
+  mul_b0/mult_18/U479/ZN (XNOR2_X1)                       0.06       2.22 f
+  mul_b0/mult_18/U16/CO (FA_X1)                           0.10       2.32 f
+  mul_b0/mult_18/U557/ZN (NAND2_X1)                       0.03       2.35 r
+  mul_b0/mult_18/U560/ZN (NAND3_X1)                       0.04       2.39 f
+  mul_b0/mult_18/U14/CO (FA_X1)                           0.10       2.49 f
+  mul_b0/mult_18/U429/ZN (NAND2_X1)                       0.05       2.53 r
+  mul_b0/mult_18/U431/ZN (NAND3_X1)                       0.04       2.57 f
+  mul_b0/mult_18/U438/ZN (NAND2_X1)                       0.03       2.61 r
+  mul_b0/mult_18/U440/ZN (NAND3_X1)                       0.04       2.65 f
+  mul_b0/mult_18/U395/ZN (NAND2_X1)                       0.04       2.69 r
+  mul_b0/mult_18/U398/ZN (NAND3_X1)                       0.04       2.73 f
+  mul_b0/mult_18/U449/ZN (NAND2_X1)                       0.04       2.76 r
+  mul_b0/mult_18/U451/ZN (NAND3_X1)                       0.04       2.80 f
+  mul_b0/mult_18/U387/ZN (NAND2_X1)                       0.03       2.83 r
+  mul_b0/mult_18/U364/ZN (AND3_X1)                        0.06       2.89 r
+  mul_b0/mult_18/U363/Z (XOR2_X1)                         0.07       2.96 r
+  mul_b0/mult_18/product[18] (multiplier_n_N12_1_DW_mult_tc_0)
+                                                          0.00       2.96 r
+  mul_b0/P[18] (multiplier_n_N12_1)                       0.00       2.96 r
+  a_Y/b[8] (adder_N11)                                    0.00       2.96 r
+  a_Y/add_18/B[8] (adder_N11_DW01_add_0)                  0.00       2.96 r
+  a_Y/add_18/U1_8/CO (FA_X1)                              0.09       3.05 r
+  a_Y/add_18/U41/ZN (NAND2_X1)                            0.03       3.08 f
+  a_Y/add_18/U44/ZN (NAND3_X1)                            0.03       3.12 r
+  a_Y/add_18/U1_10/S (FA_X1)                              0.11       3.22 f
+  a_Y/add_18/SUM[10] (adder_N11_DW01_add_0)               0.00       3.22 f
+  a_Y/sum[10] (adder_N11)                                 0.00       3.22 f
+  reg_DOUT/D[10] (reg_N11_1)                              0.00       3.22 f
+  reg_DOUT/U3/Z (MUX2_X1)                                 0.07       3.29 f
+  reg_DOUT/Q_reg[10]/D (DFFRS_X1)                         0.01       3.30 f
+  data arrival time                                                  3.30
+
+  clock CLK (rise edge)                                   3.41       3.41
+  clock network delay (ideal)                             0.00       3.41
+  clock uncertainty                                      -0.07       3.34
+  reg_DOUT/Q_reg[10]/CK (DFFRS_X1)                        0.00       3.34 r
+  library setup time                                     -0.04       3.30
+  data required time                                                 3.30
+  --------------------------------------------------------------------------
+  data required time                                                 3.30
+  data arrival time                                                 -3.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

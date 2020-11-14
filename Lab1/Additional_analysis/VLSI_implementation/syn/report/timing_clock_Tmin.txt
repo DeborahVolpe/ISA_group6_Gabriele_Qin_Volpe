@@ -1,0 +1,73 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Filter
+Version: O-2018.06-SP4
+Date   : Fri Nov  6 11:44:10 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_b0/Q_reg[7]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: regN_sx_b0/Q_reg[9]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_b0/Q_reg[7]/CK (DFFR_X1)                            0.00       0.00 r
+  reg_b0/Q_reg[7]/QN (DFFR_X1)                            0.06       0.06 f
+  reg_b0/U2/ZN (INV_X1)                                   0.05       0.11 r
+  reg_b0/Q[7] (reg_N11_12)                                0.00       0.11 r
+  mul_b0/A[7] (multiplier_n_N11_0)                        0.00       0.11 r
+  mul_b0/mult_18/a[7] (multiplier_n_N11_0_DW_mult_tc_1)
+                                                          0.00       0.11 r
+  mul_b0/mult_18/U625/ZN (XNOR2_X1)                       0.07       0.18 r
+  mul_b0/mult_18/U624/Z (BUF_X1)                          0.05       0.23 r
+  mul_b0/mult_18/U645/ZN (NAND2_X1)                       0.04       0.27 f
+  mul_b0/mult_18/U806/ZN (OAI22_X1)                       0.06       0.32 r
+  mul_b0/mult_18/U174/S (FA_X1)                           0.12       0.45 f
+  mul_b0/mult_18/U172/S (FA_X1)                           0.13       0.58 f
+  mul_b0/mult_18/U171/S (FA_X1)                           0.14       0.71 r
+  mul_b0/mult_18/U674/ZN (NOR2_X1)                        0.03       0.74 f
+  mul_b0/mult_18/U684/ZN (NOR2_X1)                        0.04       0.79 r
+  mul_b0/mult_18/U750/ZN (NAND2_X1)                       0.03       0.82 f
+  mul_b0/mult_18/U838/ZN (OAI21_X1)                       0.06       0.87 r
+  mul_b0/mult_18/U795/ZN (AOI21_X1)                       0.04       0.91 f
+  mul_b0/mult_18/U460/Z (BUF_X1)                          0.04       0.95 f
+  mul_b0/mult_18/U792/Z (XOR2_X1)                         0.06       1.01 f
+  mul_b0/mult_18/product[19] (multiplier_n_N11_0_DW_mult_tc_1)
+                                                          0.00       1.01 f
+  mul_b0/P[19] (multiplier_n_N11_0)                       0.00       1.01 f
+  regN_sx_b0/D[9] (reg_N11_11)                            0.00       1.01 f
+  regN_sx_b0/U18/Z (MUX2_X1)                              0.07       1.08 f
+  regN_sx_b0/Q_reg[9]/D (DFFR_X1)                         0.01       1.08 f
+  data arrival time                                                  1.08
+
+  clock CLK (rise edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                      -0.07       1.12
+  regN_sx_b0/Q_reg[9]/CK (DFFR_X1)                        0.00       1.12 r
+  library setup time                                     -0.04       1.08
+  data required time                                                 1.08
+  --------------------------------------------------------------------------
+  data required time                                                 1.08
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -5,11 +5,11 @@ use ieee.std_logic_1164.all;
 
 entity flipflop is
 	port(
-		D   	: in std_logic;
-		RST_n	: in std_logic;
-		en  	: in std_logic;
-		clk 	: in std_logic;
-		Q   	: out std_logic
+		D   	: in std_logic; --input
+		RST_n	: in std_logic; --reset low active
+		en  	: in std_logic; --enable
+		clk 	: in std_logic; --clock signal
+		Q   	: out std_logic --output
 		);
 end entity flipflop;
 

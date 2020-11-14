@@ -8,8 +8,8 @@ use std.textio.all;
 
 entity data_maker is  
   port (
-    CLK     : in  std_logic;
-    RST_n   : in  std_logic;
+    CLK     : in  std_logic; --clock signal
+    RST_n   : in  std_logic; --reset low active
     VOUT    : out std_logic; -- valid input for IIR
     DOUT    : out signed (10 downto 0); -- input of the IIR
     a1      : out signed (10 downto 0); -- coefficient
@@ -27,6 +27,7 @@ architecture beh of data_maker is
 
 begin  -- beh
 
+  -- set coefficients value
   a1 <= to_signed(-163,11);
   b1 <= to_signed(430,11);
   b0 <= to_signed(430,11);

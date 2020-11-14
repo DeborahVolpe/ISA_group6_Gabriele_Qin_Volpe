@@ -1,0 +1,73 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Filter
+Version: O-2018.06-SP4
+Date   : Thu Nov  5 22:30:09 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_c2/Q_reg[10]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: reg_w_c2/Q_reg[11]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_c2/Q_reg[10]/CK (DFFR_X1)                           0.00       0.00 r
+  reg_c2/Q_reg[10]/QN (DFFR_X1)                           0.07       0.07 f
+  reg_c2/U2/ZN (INV_X4)                                   0.08       0.15 r
+  reg_c2/Q[10] (reg_N11_8)                                0.00       0.15 r
+  mul_w_c2/A[10] (multiplier_n_N12_0)                     0.00       0.15 r
+  mul_w_c2/mult_18/a[10] (multiplier_n_N12_0_DW_mult_tc_1)
+                                                          0.00       0.15 r
+  mul_w_c2/mult_18/U712/ZN (XNOR2_X1)                     0.09       0.24 r
+  mul_w_c2/mult_18/U508/Z (BUF_X2)                        0.06       0.30 r
+  mul_w_c2/mult_18/U813/ZN (OAI22_X1)                     0.05       0.35 f
+  mul_w_c2/mult_18/U222/S (FA_X1)                         0.13       0.48 r
+  mul_w_c2/mult_18/U220/S (FA_X1)                         0.11       0.60 f
+  mul_w_c2/mult_18/U219/S (FA_X1)                         0.14       0.74 r
+  mul_w_c2/mult_18/U792/ZN (NOR2_X1)                      0.03       0.77 f
+  mul_w_c2/mult_18/U789/ZN (OAI21_X1)                     0.05       0.81 r
+  mul_w_c2/mult_18/U793/ZN (AOI21_X1)                     0.03       0.85 f
+  mul_w_c2/mult_18/U550/ZN (OAI21_X1)                     0.08       0.92 r
+  mul_w_c2/mult_18/U895/ZN (AOI21_X1)                     0.04       0.96 f
+  mul_w_c2/mult_18/U688/ZN (XNOR2_X1)                     0.06       1.02 f
+  mul_w_c2/mult_18/product[21] (multiplier_n_N12_0_DW_mult_tc_1)
+                                                          0.00       1.02 f
+  mul_w_c2/P[21] (multiplier_n_N12_0)                     0.00       1.02 f
+  reg_w_c2/D[11] (reg_N12_0)                              0.00       1.02 f
+  reg_w_c2/U24/ZN (NAND2_X1)                              0.03       1.05 r
+  reg_w_c2/U10/ZN (NAND2_X1)                              0.02       1.07 f
+  reg_w_c2/Q_reg[11]/D (DFFR_X1)                          0.01       1.08 f
+  data arrival time                                                  1.08
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  reg_w_c2/Q_reg[11]/CK (DFFR_X1)                         0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.19
+
+
+1

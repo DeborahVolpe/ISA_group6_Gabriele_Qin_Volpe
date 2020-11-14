@@ -1,0 +1,89 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Filter
+Version: O-2018.06-SP4
+Date   : Fri Nov  6 11:35:50 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_b0/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: regN_sx_b0/Q_reg[10]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Filter             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_b0/Q_reg[1]/CK (DFFR_X1)                            0.00       0.00 r
+  reg_b0/Q_reg[1]/Q (DFFR_X1)                             0.17       0.17 r
+  reg_b0/Q[1] (reg_N11_12)                                0.00       0.17 r
+  mul_b0/A[1] (multiplier_n_N11_0)                        0.00       0.17 r
+  mul_b0/mult_18/a[1] (multiplier_n_N11_0_DW_mult_tc_0)
+                                                          0.00       0.17 r
+  mul_b0/mult_18/U478/Z (XOR2_X1)                         0.10       0.28 r
+  mul_b0/mult_18/U305/ZN (INV_X1)                         0.06       0.34 f
+  mul_b0/mult_18/U473/ZN (NAND2_X1)                       0.10       0.44 r
+  mul_b0/mult_18/U363/ZN (OAI22_X1)                       0.06       0.49 f
+  mul_b0/mult_18/U75/S (HA_X1)                            0.08       0.58 f
+  mul_b0/mult_18/U470/ZN (AOI222_X1)                      0.11       0.69 r
+  mul_b0/mult_18/U308/ZN (INV_X1)                         0.03       0.71 f
+  mul_b0/mult_18/U469/ZN (AOI222_X1)                      0.09       0.81 r
+  mul_b0/mult_18/U307/ZN (INV_X1)                         0.03       0.84 f
+  mul_b0/mult_18/U468/ZN (AOI222_X1)                      0.09       0.93 r
+  mul_b0/mult_18/U299/ZN (INV_X1)                         0.03       0.96 f
+  mul_b0/mult_18/U467/ZN (AOI222_X1)                      0.09       1.05 r
+  mul_b0/mult_18/U298/ZN (INV_X1)                         0.03       1.08 f
+  mul_b0/mult_18/U466/ZN (AOI222_X1)                      0.09       1.17 r
+  mul_b0/mult_18/U302/ZN (INV_X1)                         0.03       1.20 f
+  mul_b0/mult_18/U465/ZN (AOI222_X1)                      0.09       1.29 r
+  mul_b0/mult_18/U301/ZN (INV_X1)                         0.03       1.32 f
+  mul_b0/mult_18/U464/ZN (AOI222_X1)                      0.09       1.41 r
+  mul_b0/mult_18/U300/ZN (INV_X1)                         0.03       1.44 f
+  mul_b0/mult_18/U15/CO (FA_X1)                           0.09       1.53 f
+  mul_b0/mult_18/U14/CO (FA_X1)                           0.09       1.62 f
+  mul_b0/mult_18/U13/CO (FA_X1)                           0.09       1.71 f
+  mul_b0/mult_18/U12/CO (FA_X1)                           0.09       1.80 f
+  mul_b0/mult_18/U11/CO (FA_X1)                           0.09       1.89 f
+  mul_b0/mult_18/U10/CO (FA_X1)                           0.09       1.98 f
+  mul_b0/mult_18/U9/CO (FA_X1)                            0.09       2.07 f
+  mul_b0/mult_18/U8/CO (FA_X1)                            0.09       2.16 f
+  mul_b0/mult_18/U7/CO (FA_X1)                            0.09       2.25 f
+  mul_b0/mult_18/U6/CO (FA_X1)                            0.09       2.34 f
+  mul_b0/mult_18/U5/S (FA_X1)                             0.13       2.47 r
+  mul_b0/mult_18/product[20] (multiplier_n_N11_0_DW_mult_tc_0)
+                                                          0.00       2.47 r
+  mul_b0/P[20] (multiplier_n_N11_0)                       0.00       2.47 r
+  regN_sx_b0/D[10] (reg_N11_11)                           0.00       2.47 r
+  regN_sx_b0/U19/ZN (NAND2_X1)                            0.03       2.50 f
+  regN_sx_b0/U18/ZN (OAI21_X1)                            0.03       2.53 r
+  regN_sx_b0/Q_reg[10]/D (DFFR_X1)                        0.01       2.54 r
+  data arrival time                                                  2.54
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  regN_sx_b0/Q_reg[10]/CK (DFFR_X1)                       0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -2.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.35
+
+
+1

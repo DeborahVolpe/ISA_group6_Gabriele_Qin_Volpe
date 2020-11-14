@@ -8,11 +8,11 @@ entity flip_flop_N_level is
 			N 		: positive := 32
 			);
 	port	(
-			D   	: in std_logic;
-			clk 	: in std_logic;
-			en		: in std_logic;
-			RST_n	: in std_logic;
-			Q  		: out std_logic_vector(N-1 downto 0)
+			D   	: in std_logic; -- input
+			clk 	: in std_logic; -- clock signal
+			en		: in std_logic; -- enable
+			RST_n	: in std_logic; -- reset low active
+			Q  		: out std_logic_vector(N-1 downto 0) --delayed input signal. Q(i) is the input signal delayed by i clock period
 			);
 end entity flip_flop_N_level;
 
@@ -20,11 +20,11 @@ architecture structure of flip_flop_N_level  is
 
 	component flipflop 
 		port	(
-				D   	: in std_logic;
-				RST_n	: in std_logic;
-				en		: in std_logic;
-				clk 	: in std_logic;
-				Q   	: out std_logic
+				D   	: in std_logic; --input
+				RST_n	: in std_logic; --reset low active
+				en		: in std_logic; --enable
+				clk 	: in std_logic; --clock
+				Q   	: out std_logic --output
 				);
 	end component flipflop;
 	

@@ -1,0 +1,1 @@
+/home/isa06/ISA_laboratory/Lab1/Optimized_version_2/netlist/Filter.sdc

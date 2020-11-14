@@ -6,14 +6,14 @@ use ieee. numeric_std.all;
 
 entity Filter is
 	port	(
-			DIN			: in signed ( 10 downto 0 );
+			DIN			: in signed ( 10 downto 0 ); -- data input
 			VIN			: in std_logic; -- valid input
 			RST_n		: in std_logic; -- reset signal, low active
 			CLK			: in std_logic; -- clock signal
 			b0			: in signed ( 10 downto 0 ); -- coefficient
 			b1			: in signed	( 10 downto 0 ); -- coefficient
 			a1			: in signed ( 10 downto 0 ); -- coefficient
-			DOUT 		: out signed ( 10 downto 0 ); -- output
+			DOUT 		: out signed ( 10 downto 0 ); -- data output
 			VOUT		: out std_logic -- valid output
 			);
 end entity Filter;

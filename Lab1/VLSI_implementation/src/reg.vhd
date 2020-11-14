@@ -7,11 +7,11 @@ use ieee.numeric_std.all;
 entity reg is
 	generic (N : positive := 5); 
 	port(
-		D       : in signed (N-1 downto 0);
-		RST_n	: in std_logic;
-		en		: in std_logic;
-		clk     : in std_logic;
-		Q       : out signed (N-1 downto 0)
+		D       : in signed (N-1 downto 0); --input
+		RST_n	: in std_logic; --reset low active
+		en		: in std_logic; --enable
+		clk     : in std_logic; --clock signal
+		Q       : out signed (N-1 downto 0) --output
 		);
 end entity reg;
 

@@ -5,9 +5,9 @@ use ieee.numeric_std.all;
 entity subtractor is
 	generic ( N : positive := 8);
 	port(
-		a			: in signed (N-1 downto 0);
-		b 			: in signed (N-1 downto 0);
-		subtraction	: out signed(N-1 downto 0)
+		a			: in signed (N-1 downto 0); --input
+		b 			: in signed (N-1 downto 0); --input
+		subtraction	: out signed(N-1 downto 0) --output a-b
 		);
 end entity subtractor;
 

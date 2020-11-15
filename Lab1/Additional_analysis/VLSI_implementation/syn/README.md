@@ -1,6 +1,6 @@
-This folder contain:
+This folder contains:
 
-- report folder : contain all report obtained using the prepared scripts with Synopsys;
+- report folder : contains all report obtained using the prepared scripts with Synopsys;
 
 - script_syn_clock_10 : to syntetize with a clock imposed equal to 10 ns;
 

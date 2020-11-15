@@ -1,4 +1,4 @@
-This folder contain:
+This folder contains:
 
 - main.c;
 
@@ -25,5 +25,5 @@ This program is able to compare two file with the same lenght and find the maxim
 
 It is also possible compare the two file using the bash command:
 	diff file1.txt file2.txt
-In this case, the output enumerate the line different in the two file. In case of empty output, the 
+In this case, the output enumerates the line different in the two file. In case of empty output, the 
 two file are perfectly equal

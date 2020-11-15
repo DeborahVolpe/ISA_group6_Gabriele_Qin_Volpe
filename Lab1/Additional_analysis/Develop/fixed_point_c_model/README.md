@@ -1,4 +1,4 @@
-This folder contain:
+This folder contains:
 
 - main.c;
 

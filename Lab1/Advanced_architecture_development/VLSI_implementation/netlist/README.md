@@ -1,4 +1,4 @@
-This folder contain:
+This folder contains:
 
 - Filter.v that is the Filter Verilog Netlist;
 

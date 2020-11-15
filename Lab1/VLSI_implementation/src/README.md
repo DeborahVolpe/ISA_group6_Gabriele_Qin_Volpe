@@ -13,10 +13,10 @@ In this folder are present all the VHDL files necessary for the filter implement
 - multiplier.vhd that multiply the two input A and B, using * operator. This is a generic component for
   the number of input bits.The output is express in 2N bits, where N is the number of the input bits;
   
-- reg.vhd that implement a register with enable and reset signal. This is a generic component for
+- reg.vhd that implements a register with enable and reset signal. This is a generic component for
   the number of input-output bits;
   
-- flipflop.vhd that implement a single flip flop with enable and reset signal;
+- flipflop.vhd that implements a single flip flop with enable and reset signal;
 
-- flip_flop_N_level.vhd that implement a cascade of N flip flop. This component is useful to delay 
+- flip_flop_N_level.vhd that implements a cascade of N flip flop. This component is useful to delay 
   the VIN signal in order to obtain the VOUT.

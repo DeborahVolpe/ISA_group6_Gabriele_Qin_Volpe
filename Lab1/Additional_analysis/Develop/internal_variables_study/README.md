@@ -1,4 +1,4 @@
-This folder contain:
+This folder contains:
 
 - main.c;
 
@@ -9,7 +9,7 @@ This folder contain:
 
 - samples.txt, that is the input file;
 
-- Variables_studies.m is a MATLAB script that read internal variables value and plot them in order
+- Variables_studies.m is a MATLAB script that reads internal variables value and plots them in order
   to evaluate number of required bit for the internal representation.
 
 

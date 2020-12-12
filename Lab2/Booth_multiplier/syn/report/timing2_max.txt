@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Sun Nov 22 21:56:42 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: clk_r_REG470_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG354_S2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clk_r_REG470_S1/CK (DFF_X1)              0.00       0.00 r
+  clk_r_REG470_S1/Q (DFF_X1)               0.10       0.10 r
+  U2131/ZN (NAND2_X1)                      0.04       0.14 f
+  U5049/ZN (OR2_X2)                        0.08       0.22 f
+  U4380/ZN (OAI22_X1)                      0.06       0.27 r
+  U4616/ZN (XNOR2_X1)                      0.07       0.34 r
+  U3763/ZN (INV_X1)                        0.03       0.38 f
+  U2127/ZN (AOI22_X1)                      0.06       0.44 r
+  U4520/ZN (INV_X1)                        0.02       0.46 f
+  U3723/ZN (NAND2_X1)                      0.04       0.50 r
+  U3612/ZN (NAND2_X1)                      0.03       0.53 f
+  U3354/ZN (NAND2_X1)                      0.03       0.56 r
+  U3876/ZN (XNOR2_X1)                      0.06       0.61 r
+  U3897/ZN (XNOR2_X1)                      0.06       0.67 r
+  clk_r_REG354_S2/D (DFF_X1)               0.01       0.68 r
+  data arrival time                                   0.68
+
+  clock clk (rise edge)                    0.78       0.78
+  clock network delay (ideal)              0.00       0.78
+  clock uncertainty                       -0.07       0.71
+  clk_r_REG354_S2/CK (DFF_X1)              0.00       0.71 r
+  library setup time                      -0.03       0.68
+  data required time                                  0.68
+  -----------------------------------------------------------
+  data required time                                  0.68
+  data arrival time                                  -0.68
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

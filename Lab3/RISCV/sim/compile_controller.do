@@ -1,0 +1,13 @@
+# compile controller VHDL files
+vcom -93 -work ./work ../src/controller/Branch.vhd
+vcom -93 -work ./work ../src/controller/Data_mem_signal.vhd
+vcom -93 -work ./work ../src/controller/Forward_unit.vhd
+vcom -93 -work ./work ../src/controller/Hazard_control_det.vhd
+vcom -93 -work ./work ../src/controller/Hazard_data_det.vhd
+vcom -93 -work ./work ../src/controller/Hazard_unit.vhd
+vcom -93 -work ./work ../src/controller/ImmediateGenerator.vhd
+vcom -93 -work ./work ../src/controller/PCsrc.vhd
+vcom -93 -work ./work ../src/controller/RF_gen.vhd
+vcom -93 -work ./work ../src/controller/Selector_generator.vhd
+vcom -93 -work ./work ../src/controller/WriteBackMux.vhd
+vcom -93 -work ./work ../src/controller/Controller.vhd

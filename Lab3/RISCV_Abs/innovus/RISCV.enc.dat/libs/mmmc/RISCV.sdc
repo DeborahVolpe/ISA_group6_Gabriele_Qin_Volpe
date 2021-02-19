@@ -1,0 +1,1 @@
+/home/isa06/ISA_laboratory/Lab3/RISCV_Abs/netlist/synopsys/RISCV.sdc

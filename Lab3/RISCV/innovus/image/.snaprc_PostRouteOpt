@@ -1,0 +1,21 @@
+#----------------------------------------------------------
+# image/.snaprc_PostRouteOpt : snapshot resource file                          
+# label = PostRouteOpt                                      
+#----------------------------------------------------------
+set tmpstr ""
+set tmpbar ""
+lappend tmpstr "dir" $sdir
+lappend tmpstr "label" PostRouteOpt
+lappend tmpstr "fplan" $sdir/ss_PostRouteOpt.fplan.gif
+lappend tmpstr "amoeba" $sdir/ss_PostRouteOpt.amoeba.gif
+lappend tmpstr "place" $sdir/ss_PostRouteOpt.place.gif
+lappend tmpstr "trgGlbOverflowPctH" 0
+lappend tmpstr "trgGlbOverflowPctV" 0
+lappend tmpbar "Congestion"
+lappend tmpstr "Congestion" 0
+lappend tmpbar WNS
+lappend tmpstr WNS 0.037
+lappend tmpbar TNS
+lappend tmpstr TNS 0.0
+lappend tmpbar Overlap
+lappend tmpstr Overlap 0
